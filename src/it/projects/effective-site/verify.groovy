@@ -20,6 +20,4 @@
 
 assert new File( basedir, 'build.log' ).text.contains( 'BUILD SUCCESS' ) 
  
-assert new File( basedir, 'effective-site.xml' ).exists();
-
-return true;
+assert new File( basedir, 'effective-site.xml' ).exists() : new File( basedir, 'build.log' ).text
