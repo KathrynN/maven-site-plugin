@@ -17,6 +17,9 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+
+assert new File( basedir, 'build.log' ).text.contains( 'BUILD SUCCESS' ) 
+ 
 assert new File( basedir, 'effective-site.xml' ).exists();
 
 return true;
